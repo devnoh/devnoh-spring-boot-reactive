@@ -33,7 +33,7 @@ public class HelloController {
         return Mono.just("Hello " + name);
     }
 
-    @RequestMapping("/hello5")
+    @RequestMapping(value = "/hello5")
     public Mono<String> hello5(String name) {
         return Mono.just("Hello " + name)
                 .map(s -> s.toUpperCase())
