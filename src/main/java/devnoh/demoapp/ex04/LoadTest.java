@@ -17,8 +17,9 @@ public class LoadTest {
     public static void main(String[] args) throws InterruptedException {
         ExecutorService es = Executors.newFixedThreadPool(100);
 
-        //String url = "http://localhost:8080/async";
-        String url = "http://localhost:8080/callable";
+        //String url = "http://localhost:8080/async"; // 10.xx secs
+        //String url = "http://localhost:8080/callable"; // 2.xx secs
+        String url = "http://localhost:8080/deferred"; // until result set
 
         RestTemplate rest = new RestTemplate();
 
