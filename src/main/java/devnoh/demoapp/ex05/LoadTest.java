@@ -19,8 +19,8 @@ public class LoadTest {
     public static void main(String[] args) throws InterruptedException, BrokenBarrierException {
         ExecutorService es = Executors.newFixedThreadPool(100);
 
-        //String url = "http://localhost:8080/rest?idx={idx}";
-        String url = "http://localhost:8080/rest2?idx={idx}";
+        //String url = "http://localhost:8080/rest4?idx={idx}";
+        String url = "http://localhost:8080/rest6?idx={idx}";
         RestTemplate rest = new RestTemplate();
 
         CyclicBarrier barrier = new CyclicBarrier(101);
